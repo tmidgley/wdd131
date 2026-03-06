@@ -11,13 +11,9 @@ body {
   line-height: 1.6;
 }
 
-/* Header */
-header {
+header span {
   background-color: #2f5d62;
   color: white;
-}
-
-header span {
   display: block;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
@@ -26,7 +22,6 @@ header span {
   padding: 1.25rem;
 }
 
-/* Navigation */
 nav {
   background-color: #364958;
 }
@@ -58,7 +53,6 @@ nav a:hover {
   color: #f9f9f9;
 }
 
-/* Main */
 main {
   max-width: 1000px;
   margin: 0 auto;
@@ -77,7 +71,7 @@ main h1 {
   color: #1f2a30;
 }
 
-/* Cards */
+/* Class Selectors */
 .card {
   background-color: white;
   border: 1px solid #d8d8d8;
@@ -86,17 +80,14 @@ main h1 {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-.card h2 {
+.card h2, .card h3 {
   background-color: #2f5d62;
   color: white;
   text-align: center;
   padding: 0.75rem;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.15rem;
-}
-
-.card h3 {
-  margin: 0rem 1rem 0rem;
+  margin: 0rem 1rem 0.5rem;
 }
 
 .card p {
@@ -113,7 +104,6 @@ main h1 {
   margin-bottom: 0.5rem;
 }
 
-/* Footer */
 footer {
   background-color: #2f5d62;
   color: white;
@@ -121,10 +111,6 @@ footer {
   padding: 1rem;
   margin-top: 2rem;
   font-family: 'Montserrat', sans-serif;
-}
-
-footer p + p {
-  margin-top: 0.35rem;
 }
 
 /* Images */

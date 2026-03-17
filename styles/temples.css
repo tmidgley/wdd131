@@ -67,7 +67,6 @@ main h1 {
 }
 
 nav {
-    display: flex;
     max-width: 900px;
     margin: 0 auto;
 }

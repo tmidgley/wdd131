@@ -1,4 +1,4 @@
-@media screen and (min-width: 700px) {
+@media (min-width: 700px) {
     #menu {
         display: none;
     }
@@ -12,6 +12,7 @@
 
     .navigation a {
         display: block;
+        flex: 1 1 100%;
     }
 
     .gallery {

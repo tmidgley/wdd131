@@ -69,12 +69,12 @@ main h1 {
 
 /* mobile nav */
 nav {
+    display: flex;
     max-width: 900px;
     margin: 0 auto;
 }
 
 .navigation {
-    display: flex;
     flex-direction: column;
     list-style: none;
     background-color: var(--primary-color);

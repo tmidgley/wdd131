@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images</title>
+    <link rel="stylesheet" href="styles/responsive-images.css">
+</head>
+
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.jpeg" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.jpeg" media="(min-width: 500px)">
+                <img src="images/hero-small.jpeg" srcset="
+                        images/hero-small.jpeg 500w,
+                        images/hero-medium.jpeg 1000w,
+                        images/hero-large.jpeg 1500w
+                    " sizes="100vw" alt="Temple image" width="1500" height="750">
+                <!-- this works but the above is better; src="images/hero-small.jpeg" alt="Temple image" width="1500" height="750"> -->
+            </picture>
+        </div>
+    </main>
+</body>
+
+</html>

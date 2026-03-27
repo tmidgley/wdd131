@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Place Page</title>
+        <link rel="stylesheet" href="styles/place.css">
+        <script src="scripts/place.js" defer></script>
+    </head>
+
+<body>
+
+    <header>
+        <h1>Washington D.C.</h1>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <picture>
+                <source srcset="images/place-large.webp" media="(min-width: 768px)">
+                <source srcset="images/place-medium.webp" media="(min-width: 500px)">
+                <img src="images/place-small.webp" alt="Beautiful view of Washington DC">
+            </picture>
+        </section>
+
+        <section class="data">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Country:</strong> USA</li>
+                <li><strong>District:</strong> Federal District (not a state)</li>
+                <li><strong>Population:</strong> 670,000</li>
+                <li><strong>Founded:</strong> 1790</li>
+                <li><strong>Named After:</strong> George Washington</li>
+                <li><strong>Area:</strong> 68.3 square miles</li>
+            </ul>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+            <img src="images/weather.svg" alt="weather icon" class="weather-icon">
+            <ul>
+                <li><strong>Temperature:</strong> <span id="temp">--</span> °F</li>
+                <li><strong>Wind Speed:</strong> <span id="wind">--</span> mph</li>
+                <li><strong>Wind Chill:</strong> <span id="windchill">--</span></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            © <span id="year"></span> | Travis Midgley
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>

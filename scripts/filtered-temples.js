@@ -3,7 +3,7 @@ const navigation = document.querySelector(".navigation");
 const year = document.querySelector("#currentyear");
 const lastModified = document.querySelector("#lastModified");
 const gallery = document.querySelector(".gallery");
-const pageTitle = document.querySelector("main h1");
+const pageTitle = document.querySelector("main h2");
 
 hamButton.addEventListener("click", () => {
     navigation.classList.toggle("open");
@@ -91,7 +91,7 @@ function displayTemples(filteredTemples) {
 
     filteredTemples.forEach((temple) => {
         const card = document.createElement("section");
-        const name = document.createElement("h3");
+        const name = document.createElement("h2");
         const location = document.createElement("p");
         const dedicated = document.createElement("p");
         const area = document.createElement("p");
@@ -118,12 +118,14 @@ function displayTemples(filteredTemples) {
     });
 }
 
-document.querySelector("#home").addEventListener("click", () => {
+document.querySelector("#home").addEventListener("click", (e) => {
+    e.preventDefault();
     pageTitle.textContent = "Home";
     displayTemples(temples);
 });
 
-document.querySelector("#old").addEventListener("click", () => {
+document.querySelector("#old").addEventListener("click", (e) => {
+    e.preventDefault();
     pageTitle.textContent = "Old Temples";
     const oldTemples = temples.filter(temple => {
         const year = parseInt(temple.dedicated.split(",")[0]);
@@ -132,7 +134,8 @@ document.querySelector("#old").addEventListener("click", () => {
     displayTemples(oldTemples);
 });
 
-document.querySelector("#new").addEventListener("click", () => {
+document.querySelector("#new").addEventListener("click", (e) => {
+    e.preventDefault();
     pageTitle.textContent = "New Temples";
     const newTemples = temples.filter(temple => {
         const year = parseInt(temple.dedicated.split(",")[0]);
@@ -141,13 +144,15 @@ document.querySelector("#new").addEventListener("click", () => {
     displayTemples(newTemples);
 });
 
-document.querySelector("#large").addEventListener("click", () => {
+document.querySelector("#large").addEventListener("click", (e) => {
+    e.preventDefault();
     pageTitle.textContent = "Large Temples";
     const largeTemples = temples.filter(temple => temple.area > 90000);
     displayTemples(largeTemples);
 });
 
-document.querySelector("#small").addEventListener("click", () => {
+document.querySelector("#small").addEventListener("click", (e) => {
+    e.preventDefault();
     pageTitle.textContent = "Small Temples";
     const smallTemples = temples.filter(temple => temple.area < 10000);
     displayTemples(smallTemples);

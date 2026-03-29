@@ -1,0 +1,147 @@
+:root {
+    --primary-color: #1d3557;
+    --accent-color: #457b9d;
+    --background-color: #f1faee;
+    --text-color: #222;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+header,
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem;
+}
+
+header {
+    position: relative;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+#menu {
+    font-size: 1.75rem;
+    border: none;
+    background: transparent;
+    color: var(--white);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✕";
+}
+
+nav {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.08);
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--white);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navigation a:hover {
+    background-color: var(--accent-color);
+    color: var(--white);
+    font-weight: 600;
+}
+
+.navigation.open a {
+    display: block;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.gallery section {
+    background-color: var(--white);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-top: 0.5rem;
+    border-radius: 6px;
+}
+
+.gallery h2 {
+    margin-bottom: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.gallery p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+}
+
+.label {
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}

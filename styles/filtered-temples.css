@@ -2,8 +2,12 @@
     --primary-color: #1d3557;
     --accent-color: #457b9d;
     --background-color: #f1faee;
-    --text-color: #222;
+    --text-color: #222222;
     --white: #ffffff;
+
+    --border-color: #cccccc;
+    --shadow-color-light: rgba(0, 0, 0, 0.08);
+    --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
 * {
@@ -76,7 +80,7 @@ nav {
     list-style: none;
     text-align: right;
     background-color: var(--primary-color);
-    box-shadow: 0 2px 8px rgb(0 0 0 / 0.08);
+    box-shadow: 0 2px 8px var(--shadow-color-light);
 }
 
 .navigation li {
@@ -85,12 +89,11 @@ nav {
 
 .navigation a {
     display: inline-block;
-    padding: 0.5 rem 1rem;
+    padding: 0.5rem 1rem;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     text-decoration: none;
     color: var(--white);
-    transition: background-color 0.3s, color 0.3s;
 }
 
 .navigation a:hover {
@@ -112,11 +115,12 @@ nav {
 
 .gallery section {
     background-color: var(--white);
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-color);
+    /* fixed */
     border-radius: 8px;
     padding: 1rem;
     text-align: center;
-    box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+    box-shadow: 0 2px 8px var(--shadow-color);
 }
 
 .gallery img {

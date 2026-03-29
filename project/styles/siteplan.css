@@ -1,0 +1,125 @@
+:root {
+    --primary-color: #f88158;
+    --secondary-color: #58cff8;
+    --background-color: #faf2ef;
+    --text-color: #040100;
+    --white: #ffffff;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: "Inter", sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Main */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Sections */
+section {
+    margin-bottom: 1.5rem;
+    background-color: var(--white);
+    padding: 1rem;
+    border-left: 5px solid var(--primary-color);
+}
+
+/* Headings */
+h2 {
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+h3 {
+    margin-top: 1rem;
+}
+
+/* Lists */
+ul {
+    margin-left: 1.25rem;
+}
+
+/* Color Boxes */
+.color-boxes {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+}
+
+.color {
+    flex: 1;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+    border: 1px solid #ccc;
+}
+
+.primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+}
+
+.background {
+    background-color: var(--background-color);
+}
+
+.dark {
+    background-color: var(--text-color);
+    color: white;
+}
+
+/* Wireframes */
+.wireframe {
+    border: 2px dashed var(--secondary-color);
+    padding: 1rem;
+    margin-top: 0.5rem;
+}
+
+.wireframe p {
+    border: 1px solid var(--text-color);
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--text-color);
+    color: var(--white);
+}
+
+/* Wireframe Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 0.5rem;
+    border: 2px solid var(--secondary-color);
+    border-radius: 6px;
+}

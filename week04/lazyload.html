@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lazy loading images practice page">
+    <meta name="author" content="Travis Midgley">
+    <title>Lazy Loading Images</title>
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/lazyload.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <h1>Lazy Loading Images</h1>
+        <img src="images/lazyload1.webp" srcset="images/lazyload1-small.webp 250w, images/lazyload1.webp 400w"
+            sizes="(max-width: 600px) 250px, 400px" alt="basketball shot - boy" loading="lazy">
+
+        <img src="images/lazyload2.webp" srcset="images/lazyload2-small.webp 250w, images/lazyload2.webp 400w"
+            sizes="(max-width: 600px) 250px, 400px" alt="basketball team" loading="lazy">
+
+        <img src="images/lazyload3.webp" srcset="images/lazyload3-small.webp 250w, images/lazyload3.webp 400w"
+            sizes="(max-width: 600px) 250px, 400px" alt="volleyball serve" loading="lazy">
+
+        <img src="images/lazyload4.webp" srcset="images/lazyload4-small.webp 250w, images/lazyload4.webp 400w"
+            sizes="(max-width: 600px) 250px, 400px" alt="basketball shot - girl" loading="lazy">
+
+        <img src="images/lazyload5.webp" srcset="images/lazyload5-small.webp 250w, images/lazyload5.webp 400w"
+            sizes="(max-width: 600px) 250px, 400px" alt="soccer ball" loading="lazy">
+
+        <img src="images/lazyload6.webp" srcset="images/lazyload6-small.webp 250w, images/lazyload6.webp 400w"
+            sizes="(max-width: 600px) 250px, 400px" alt="wheelchair basketball" loading="lazy">
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Travis Midgley</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

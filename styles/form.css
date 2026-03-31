@@ -47,7 +47,7 @@ label,
 legend {
     display: block;
     font-weight: 500;
-    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 select,
@@ -70,32 +70,22 @@ textarea {
 fieldset {
     border: 1px solid var(--border-color);
     border-radius: 4px;
-    padding: 0.75rem 1rem 1rem;
+    padding: 1rem;
 }
-
-.rating-group {
-    direction: rtl;
-    text-align: left;
-    padding: 0.5rem;
-}
-
 
 .rating-group label {
-    display: inline-block;
-    font-size: 2rem;
-    color: #ccc;
-    cursor: pointer;
+    font-weight: 400;
     margin-bottom: 0.5rem;
 }
 
 .rating-group input[type="radio"] {
-    display: none;
+    width: auto;
+    margin-right: 0.5rem;
 }
 
-.rating-group label:hover,
-.rating-group label:hover~label,
-.rating-group input[type="radio"]:checked~label {
-    color: gold;
+.features-group label {
+    font-weight: 400;
+    margin-bottom: 0.5rem;
 }
 
 .features-group input[type="checkbox"] {
@@ -132,4 +122,38 @@ footer {
     color: var(--primary-color);
     font-size: 0.95rem;
     padding: 0.5rem;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 0.5rem;
+    }
+
+    form {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    label,
+    legend {
+        font-size: 0.95rem;
+    }
+
+    select,
+    input[type="date"],
+    input[type="text"],
+    textarea {
+        padding: 0.6rem;
+        font-size: 0.95rem;
+    }
+
+    input[type="submit"] {
+        padding: 0.75rem;
+        font-size: 1rem;
+    }
+
 }

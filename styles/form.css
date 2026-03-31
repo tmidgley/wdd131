@@ -1,0 +1,135 @@
+:root {
+    --page-background: #f2f2f2;
+    --form-background: #ffffff;
+    --primary-color: #1c2541;
+    --accent-color: #ff7b00;
+    --text-color: #111111;
+    --border-color: #cccccc;
+    --max-width: 700px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    background-color: var(--page-background);
+    color: var(--text-color);
+    line-height: 1.5;
+    padding: 1rem;
+}
+
+h1 {
+    font-family: "Orbitron", Arial, sans-serif;
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+form {
+    max-width: var(--max-width);
+    margin: 0 auto 1rem auto;
+    background-color: var(--form-background);
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+}
+
+div,
+fieldset {
+    margin-bottom: 1rem;
+}
+
+label,
+legend {
+    display: block;
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    font: inherit;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+fieldset {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 0.75rem 1rem 1rem;
+}
+
+.rating-group {
+    direction: rtl;
+    text-align: left;
+    padding: 0.5rem;
+}
+
+
+.rating-group label {
+    display: inline-block;
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+}
+
+.rating-group input[type="radio"] {
+    display: none;
+}
+
+.rating-group label:hover,
+.rating-group label:hover~label,
+.rating-group input[type="radio"]:checked~label {
+    color: gold;
+}
+
+.features-group input[type="checkbox"] {
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+.optional {
+    color: #555555;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 0.85rem;
+    font: inherit;
+    font-weight: 700;
+    background-color: var(--accent-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #e66f00;
+}
+
+footer {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 0.95rem;
+    padding: 0.5rem;
+}

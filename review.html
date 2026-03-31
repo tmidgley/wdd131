@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted</title>
+
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+    <main>
+        <h1>Thank You!</h1>
+
+        <p>Your review has been submitted successfully.</p>
+
+        <p>Total Reviews Submitted: <span id="reviewCount">0</span></p>
+
+        <a href="form.html">Submit Another Review</a>
+    </main>
+
+    <footer>
+        &copy; 2026 &bull; Travis Midgley &bull;
+    </footer>
+
+    <script>
+        // get current count
+        let reviewCount = localStorage.getItem("reviewCount");
+
+        // if none exists, start at 0
+        if (reviewCount === null) {
+            reviewCount = 0;
+        }
+
+        // increment
+        reviewCount = Number(reviewCount) + 1;
+
+        // store updated value
+        localStorage.setItem("reviewCount", reviewCount);
+
+        // display it
+        document.getElementById("reviewCount").textContent = reviewCount;
+    </script>
+</body>
+
+</html>

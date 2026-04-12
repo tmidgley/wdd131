@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Basketball training tips, drills, videos, and checklists to improve your game.">
+    <meta name="author" content="Travis Midgley">
+    <title>AZ Basketball Universe | Training</title>
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles and JS -->
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/shared.js" defer></script>
+</head>
+
+<body>
+    <!-- Skip link for accessibility -->
+    <a class="skip-link" href="#maincontent">Skip to main content</a>
+
+    <header>
+        <div class="container top-bar">
+            <div class="branding">
+                <span class="site-title">AZ Basketball Universe</span>
+                <p class="site-tagline">Improve your basketball skills</p>
+            </div>
+
+            <!-- Mobile menu button -->
+            <button id="menu-button" class="menu-button" aria-label="Open navigation menu" aria-expanded="false">
+                ☰
+            </button>
+
+            <!-- Navigation -->
+            <nav id="site-nav" class="navigation" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="stats.html">Stats</a>
+                <a href="training.html" aria-current="page">Training</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="maincontent">
+
+        <!-- Page title -->
+        <section class="page-header container">
+            <h1>Training Tips and Basketball Drills</h1>
+            <p class="section-intro">
+                Use these drills and videos to help improve your basketball skills.
+            </p>
+        </section>
+
+        <!-- Training cards -->
+        <section class="container training-grid">
+
+            <!-- Ball Handling -->
+            <article class="tip-card">
+                <h2>Ball Handling</h2>
+                <p>Follow along with this video to improve your ball handling skills.</p>
+
+                <!-- Video -->
+                <div class="video-wrap">
+                    <iframe src="https://www.youtube.com/embed/DdfWxlFoENw" title="Basketball ball handling drill"
+                        loading="lazy" allowfullscreen>
+                    </iframe>
+                </div>
+
+                <!-- Checklist -->
+                <h3>Checklist</h3>
+                <ul class="checklist">
+                    <li>Wide base stance</li>
+                    <li>Crossovers (right and left)</li>
+                    <li>Double cross</li>
+                    <li>Pickups</li>
+                    <li>Figure 8 pickups</li>
+                </ul>
+            </article>
+
+            <!-- Shooting -->
+            <article class="tip-card">
+                <h2>Shooting</h2>
+                <p>Use this workout to improve your shooting form and consistency.</p>
+
+                <div class="video-wrap">
+                    <iframe src="https://www.youtube.com/embed/MAvdDUUTLB4" title="Basketball shooting drills"
+                        loading="lazy" allowfullscreen>
+                    </iframe>
+                </div>
+
+                <h3>Checklist</h3>
+                <ul class="checklist">
+                    <li>Form shooting close to basket</li>
+                    <li>Mid-range shots</li>
+                    <li>Catch and shoot</li>
+                    <li>Corner shots</li>
+                </ul>
+            </article>
+
+            <!-- Rebounding -->
+            <article class="tip-card">
+                <h2>Rebounding</h2>
+                <p>Learn how to box out and control rebounds on offense and defense.</p>
+
+                <div class="video-wrap">
+                    <iframe src="https://www.youtube.com/embed/v6VMpvEYrno" title="Basketball rebounding drills"
+                        loading="lazy" allowfullscreen>
+                    </iframe>
+                </div>
+
+                <h3>Checklist</h3>
+                <ul class="checklist">
+                    <li>Box out your opponent</li>
+                    <li>Jump at the highest point</li>
+                    <li>Secure the ball</li>
+                    <li>Finish with a put back</li>
+                </ul>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; <span id="year"></span> AZ Basketball Universe | Travis Midgley</p>
+            <div class="footer-links">
+                <a href="references.html">References</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

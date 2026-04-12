@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enter basketball stats and view player averages and game logs.">
+    <meta name="author" content="Travis Midgley">
+    <title>AZ Basketball Universe | Stats</title>
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles and JS -->
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/shared.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#maincontent">Skip to main content</a>
+
+    <header>
+        <div class="container top-bar">
+            <div class="branding">
+                <span class="site-title">AZ Basketball Universe</span>
+                <p class="site-tagline">Track your game performance</p>
+            </div>
+
+            <!-- Mobile menu -->
+            <button id="menu-button" class="menu-button" aria-label="Open navigation menu" aria-expanded="false">
+                ☰
+            </button>
+
+            <!-- Navigation -->
+            <nav id="site-nav" class="navigation">
+                <a href="index.html">Home</a>
+                <a href="stats.html" aria-current="page">Stats</a>
+                <a href="training.html">Training</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="maincontent">
+
+        <!-- Page title -->
+        <section class="page-header container">
+            <h1>Team Stats and Game Logs</h1>
+            <p class="section-intro">
+                Enter simple game stats and view averages and game logs.
+            </p>
+        </section>
+
+        <!-- GAME ENTRY -->
+        <section class="container stats-entry-panel">
+            <h2>Enter Game</h2>
+
+            <form id="game-stats-form">
+                <div class="game-meta-grid">
+
+                    <div class="form-group">
+                        <label for="opponent">Opponent</label>
+                        <input type="text" id="opponent" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="game-date">Game Date</label>
+                        <input type="date" id="game-date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="result">Result</label>
+                        <select id="result" required>
+                            <option value="">Select one</option>
+                            <option value="Win">Win</option>
+                            <option value="Loss">Loss</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="team-score">Team Score</label>
+                        <input type="number" id="team-score" min="0" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="opponent-score">Opponent Score</label>
+                        <input type="number" id="opponent-score" min="0" required>
+                    </div>
+                </div>
+
+                <h3>5 Players</h3>
+
+                <!-- Simple player table -->
+                <table class="entry-table">
+                    <thead>
+                        <tr>
+                            <th>Player</th>
+                            <th>PTS</th>
+                            <th>REB</th>
+                            <th>AST</th>
+                            <th>STL</th>
+                            <th>BLK</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <!-- 5 players -->
+                        <tr>
+                            <td><input type="text" id="p1-name"></td>
+                            <td><input type="number" id="p1-pts" value="0"></td>
+                            <td><input type="number" id="p1-reb" value="0"></td>
+                            <td><input type="number" id="p1-ast" value="0"></td>
+                            <td><input type="number" id="p1-stl" value="0"></td>
+                            <td><input type="number" id="p1-blk" value="0"></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="text" id="p2-name"></td>
+                            <td><input type="number" id="p2-pts" value="0"></td>
+                            <td><input type="number" id="p2-reb" value="0"></td>
+                            <td><input type="number" id="p2-ast" value="0"></td>
+                            <td><input type="number" id="p2-stl" value="0"></td>
+                            <td><input type="number" id="p2-blk" value="0"></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="text" id="p3-name"></td>
+                            <td><input type="number" id="p3-pts" value="0"></td>
+                            <td><input type="number" id="p3-reb" value="0"></td>
+                            <td><input type="number" id="p3-ast" value="0"></td>
+                            <td><input type="number" id="p3-stl" value="0"></td>
+                            <td><input type="number" id="p3-blk" value="0"></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="text" id="p4-name"></td>
+                            <td><input type="number" id="p4-pts" value="0"></td>
+                            <td><input type="number" id="p4-reb" value="0"></td>
+                            <td><input type="number" id="p4-ast" value="0"></td>
+                            <td><input type="number" id="p4-stl" value="0"></td>
+                            <td><input type="number" id="p4-blk" value="0"></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="text" id="p5-name"></td>
+                            <td><input type="number" id="p5-pts" value="0"></td>
+                            <td><input type="number" id="p5-reb" value="0"></td>
+                            <td><input type="number" id="p5-ast" value="0"></td>
+                            <td><input type="number" id="p5-stl" value="0"></td>
+                            <td><input type="number" id="p5-blk" value="0"></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <button type="submit" class="button">Save Game</button>
+                <p id="stats-message"></p>
+            </form>
+        </section>
+
+        <!-- OUTPUT TABLES -->
+        <section class="container stats-output-layout">
+
+            <!-- AVERAGES -->
+            <section class="stats-table-panel">
+                <h2>Player Averages (Click to Sort)</h2>
+
+                <table id="averages-table">
+                    <thead>
+                        <tr>
+                            <!-- data-sort tells JS what to sort -->
+                            <th data-sort="name">Player</th>
+                            <th data-sort="games">Games</th>
+                            <th data-sort="pts">PPG</th>
+                            <th data-sort="reb">RPG</th>
+                            <th data-sort="ast">APG</th>
+                            <th data-sort="stl">SPG</th>
+                            <th data-sort="blk">BPG</th>
+                        </tr>
+                    </thead>
+                    <tbody id="averages-table-body"></tbody>
+                </table>
+            </section>
+
+            <!-- GAME LOG -->
+            <section class="stats-table-panel">
+                <h2>Game Logs (Click to Sort)</h2>
+
+                <table id="gamelog-table">
+                    <thead>
+                        <tr>
+                            <th data-sort="date">Date</th>
+                            <th data-sort="opponent">Opponent</th>
+                            <th data-sort="result">Result</th>
+                            <th data-sort="player">Player</th>
+                            <th data-sort="pts">PTS</th>
+                            <th data-sort="reb">REB</th>
+                            <th data-sort="ast">AST</th>
+                            <th data-sort="stl">STL</th>
+                            <th data-sort="blk">BLK</th>
+                        </tr>
+                    </thead>
+                    <tbody id="gamelog-table-body"></tbody>
+                </table>
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; <span id="year"></span> AZ Basketball Universe | Travis Midgley</p>
+            <a href="references.html">References</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
